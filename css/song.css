@@ -1,0 +1,177 @@
+﻿@import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Meddon|Patrick+Hand|Open+Sans+Condensed:300i|Charmonman');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Jacques+Francois+Shadow|Bungee|Pacifico');
+
+@font-face {
+    font-family: Avenir-Light;
+    src: url(../fonts/Avenir-Light.ttf);
+}
+
+@font-face {
+    font-family: Avenir-Medium;
+    src: url(../fonts/Avenir-Medium.ttf);
+}
+
+@font-face {
+    font-family: AvenirNext-MediumItalic;
+    src: url(../fonts/AvenirNext-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: Avenir-Heavy;
+    src: url(../fonts/Avenir-Heavy.ttf);
+}
+/*NAV*/
+ #nav  {position: fixed; top: 20%; left: 0; z-index: 9999; opacity:0.85;}
+#nav {display: block; background-color: hsl(150, 100%, 55%); text-align: center;}
+ #nav li {border-bottom: 1px dotted rgba(255,255,255,.5); padding: 30px 20px;}
+ #nav li:last-of-type { margin-bottom: 0px;}
+#nav li a {color: #FFF; font-size: 1.3em;}
+.shopping-cart {background-color: #f4f4f4; color: #2988af; position: relative;}
+.shopping-cart a, .shopping-cart a i {color: hsl(150, 100%, 42%);}
+ .shopping-cart:hover a, .shopping-cart:hover a i {color: #FFF;}
+#nav li:hover { background-color: #00994d; transition: background-color 500ms;}
+
+
+/* MENU  SHOPPING CART */
+#menu-cart{position: absolute; left:100px; top: -400px; background: #f4f4f4; padding: 3%; min-width: 500px; display: none;}
+.cart-img{display: flex; align-content: flex-start; align-items: flex-start; margin-bottom: 25px;}
+.cart-img img{max-height: 85px; width: auto; padding-right:20px; }
+.cart-excerpt{text-align: left; padding-bottom: 10px;}
+.cart-excerpt.truncate ::after{content:"....."}
+.cart-quantity{margin-right: 10px;}
+.cart-price{padding-right: 10px;}
+.cart-actions{text-align: right;}
+#cart-output{padding: 5%;}
+#cart-total{background-color: springgreen; padding: 3%; color: #FFF;}
+.cart-total-quantity{margin-right: 10px;}
+
+/*TOP*/
+.try { background-color: black;  color: #FFF; padding: 15px 50px;     border-bottom: 4px solid springgreen;
+}
+.case {width: 38px; margin-bottom: -15px;margin-top: -15px;}
+.lodget { margin-top: -3px;font-family: 'Bungee', cursive; margin-left: -15px; font-size: 28px;}
+#okay {    font-size: 28px;  /*font-family: 'Charmonman', cursive;*/}
+.okay1 {  font-family: 'Pacifico', cursive;color:white;}
+.okay2:hover{color:transparent;}
+.rubberBand{ animation-duration: 5s; animation-delay: 3s;animation-iteration-count: infinite;
+}
+
+/*HEADER*/
+#header {margin-bottom: 1px;}
+section, span, p, nav, li, ol, a, table, tr, td, thead, tfoot, div, article, summary, details, header, footer, main {
+    font-family: 'Avenir-Light', sans-serif; word-break: break-word; line-height: 1.4em; }
+#header .col, #header .col-lg-12 { padding-left: 0px !important; padding-right: 0px !important;  position: relative;}
+img, video { width: 100%; margin: auto; height: auto;}
+.text { color: yellow; font-size: 15px; padding: 8px 12px; position: absolute; bottom: 75px; width: 100%; text-align: center;}
+.slide-container { position: relative;}
+.effect {animation-name: effect; animation-duration: 1s;}
+.dot { height: 15px; width: 15px; margin: 0 2px; background-color: springgreen; border-radius: 50%;
+       display: inline-block; transition: background-color 0.6s ease; border: 1px solid black;}
+.dot-container{text-align: center; display: flex; justify-content: center; align-items: center; position: relative; top: -70px; z-index: 9999;}
+.active { background-color: #fff;}
+@keyframes effect {
+   from {opacity: 0.3;}
+   to {opacity: 1;}
+}
+
+
+
+
+
+
+
+/*DIVIDER*/
+.section-divider {
+    background-color: #33ff99;
+    padding: 3px 0;
+}
+
+/* DESCRIPTION */
+#content .col{padding: 20px 70px; }
+#about {border-radius:250px; background-color: springgreen; color: #FFF; }
+#secure {border-radius:250px; background-color: springgreen; color: #FFF; }
+.about {border-radius:250px; background-color: springgreen; color: #FFF; margin-right: 20px;}
+#secure {background-color:white;  padding: 20px 70px; } 
+.cta-title{font-size: 1.5em; line-height: 1.4em; padding-bottom: 10px; font-family: 'Avenir-Heavy', sans-serif; }
+.cta-blurb{line-height: 1.3em;}
+.learn-more{padding-top: 20px;}
+.learn-more a{color:#FFF; }
+.learn-more i{font-size: 1.3em;}
+.learn-more-text{padding-right: 10px;}
+
+
+/*micorsoft*/
+#micro{padding:25px 0px 55px; margin-top:30px;}
+.micro-title{text-align:center;font-size: 35px; line-height: 1.4em; padding-bottom: 15px; font-family: 'Bungee', cursive;}
+
+/*PRODUCT*/
+#best {background-color: black; color: #FFF; padding:20px 70px 80px;}
+.buy-feature{ padding-top:20px; margin:auto; text-align: center; margin-top:10px;}
+.btn-primary {background-color: #333333;color: #ffffff; border: 1px solid #333333; border-radius: 30px !important;margin:auto;  padding: 12px 15px; box-shadow: 2px 2px 6px rgba(0, 0, 0, .8) inset;}
+ .btn-primary:hover { background-color: antiquewhite; transition: background 500ms;  border: 1px solid antiquewhite;  color:#333333; }
+button#add-to-cart-1 {color: black;background-color: mediumspringgreen;}
+button#add-to-cart-1:hover { background-color: antiquewhite;transition: background 250ms; border: 1px solid antiquewhite; color: #333333;}
+#surface{padding-right:0px; padding-left:0px;}
+#ship {background-color: black; color: #FFF; padding:20px 70px 80px;}
+.best { width: 110px; margin:auto;}
+.ship{ width: 110px; margin:auto;}
+.cta-title1{font-size: 32px; line-height: 1.4em; text-align: center; font-family: 'Jacques Francois Shadow', cursive; }
+.cta-blurb1{line-height:1.1em;text-align:center; font-family: 'Patrick Hand', cursive; font-size:29px;color:orange;}
+.cta-title2{font-size: 32px; line-height: 1.4em; text-align: center; font-family: 'Jacques Francois Shadow', cursive; }
+.cta-blurb2{line-height:1.1em;text-align:center;font-family: 'Patrick Hand', cursive; font-size:29px; color:orange;}
+
+
+
+/* PRODUCT OTHER */
+#product-other{background-color: transparent;}
+#product-other .row{padding: 3% 6%;}
+#product-other .row:first-of-type{padding-bottom:0%;}
+.product-other{margin-top: 150px;}
+.product-other img{max-height: 310px; width: auto;}
+.product-other-title{font-size: 3em; text-align: center; font-family: 'Avenir-Heavy', sans-serif; margin-bottom: 20px;}
+.add-to-cart-div{text-align: center;}
+.add-to-cart-div button{width: 100%;}
+.add-to-cart-green{background-color: #11b648; color: #FFF;}
+
+/* VIDEO */
+#video{padding:55px 35px;}
+.video-title{font-size: 1.5em; line-height: 1.4em; padding-bottom: 10px; font-family: 'Avenir-Heavy', sans-serif;}
+.customer-quote{margin-bottom: 20px;}
+.customer-quote blockquote{font-family: 'Open Sans Condensed', sans-serif; font-size:19px;}
+
+
+/*LOCATION*/
+#location{ padding-top: 55px; padding-bottom: 55px; }
+  #location .col { padding-left: 0px; padding-right: 0px;  }
+.location iframe {width: 100%; height: auto; min-height: 500px;
+}
+
+/* OWNER */
+.other-pics img{max-height:190px; width: auto;}
+.owner-section-title{text-align: center; font-size: 4em; color:gray; font-family: 'Avenir-Heavy', sans-serif; margin-bottom: 30px;}
+.other-pics-intro{font-size: 1.3em; background-color: #f4f4f4; padding: 2%; margin-bottom: 15px;}
+/* FOOTER */
+#footer{background-color: springgreen; color: #FFF; padding: 15px 50px;}
+#footer-nav{text-align: right;}
+#footer-nav li{display: inline-block; padding-right: 20px; font-size: 14px;}
+#footer-nav li a{color: #FFF;}
+#footer .row{padding-left: 40px; padding-right: 40px;}
+.symbol i {font-size: 1.9em; color: #000000; opacity: .9; padding-right: 10px;}
+#copy{font-size:13px;}
+.copyright{padding-right: 30px;}
+/* CHAT */
+#chat{position: fixed; bottom: 70px; right: 50px; z-index: 999;}
+#chat i{color:#FFF; background-color: rgb(0, 255, 128); padding: 20px; border-radius: 50%; font-size: 1.8em; box-shadow: 6px 6px 10px rgba(51,51,51,.6);}
+#chat i:hover{background-color: #ff6600; transition: background-color 500ms; cursor: pointer;} 
+.chat-box{position: fixed; min-width: 420px; max-width: 500px; height: auto; bottom: 70px; right:125px; background-color: #F4F4F4; z-index: 999; border-radius: 10px; padding: 2%; border: 5px solid #1b5871}
+.chat-convo span{display: block; margin-bottom: 15px;}
+.chat-convo span:last-of-type{margin-bottom: 0px;}
+.chat-box-title{font-size: 1.5em; color:gray; text-align: center; margin-bottom: 25px;}
+.chat-convo span{padding: 1%;}
+.chat-convo span:nth-child(odd){background-color: #fff;}
+.message-input{margin-top: 15px;}
+.message-send{text-align: center; margin-top: 15px;}
+.chat-active{background-color: #11b648 !important; color: #FFF !important;}
+#chat-box{display:none;}
+
